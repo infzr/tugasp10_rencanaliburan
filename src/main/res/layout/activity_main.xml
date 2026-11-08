@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- HEADER APLIKASI -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✈️ CATATAN RENCANA LIBURAN"
+            android:textColor="#38BDF8"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Destinasi Liburan"
+            android:textColor="#94A3B8"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- KARTU FORMULIR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#1E293B"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📍 Kota Tujuan Destinasi"
+                android:textColor="#F8FAFC"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etDestinasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contoh: Tokyo, Jepang"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#64748B"
+                android:background="#334155"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💵 Estimasi Budget (Auto Titik Ribuan)"
+                android:textColor="#F8FAFC"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etBudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contoh: 10000000"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#64748B"
+                android:background="#334155"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏱️ Durasi Perjalanan (Hari)"
+                android:textColor="#F8FAFC"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etDurasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contoh: 5"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#64748B"
+                android:background="#334155"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅 Target Tahun"
+                android:textColor="#F8FAFC"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etTahun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contoh: 2028"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#64748B"
+                android:background="#334155"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Kolom Kata Sandi (Sengaja tidak disimpan untuk keamanan) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔒 Kata Sandi Akun (Tidak Disimpan)"
+                android:textColor="#CBD5E1"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etKataSandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan kata sandi sementara..."
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#64748B"
+                android:background="#334155"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnSimpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💾 SIMPAN RENCANA"
+                android:backgroundTint="#0284C7"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- KARTU PREVIEW / HASIL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#1E293B"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌴 RENCANA TERSIMPAN"
+                android:textColor="#F8FAFC"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvHasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Belum ada rencana tersimpan..."
+                android:textColor="#38BDF8"
+                android:textSize="14sp"
+                android:background="#334155"
+                android:padding="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
